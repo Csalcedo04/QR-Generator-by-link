@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR-Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <section class="col-lg-6">
+          <div class="qr_container">
+            <span><div class="white_background">
+              
+              <img src="qr_img.png"alt="Imagen Qr generada a peticion del usuario"class="Qr"/>
+              <h2 class="text fs-5">
+                  Congratulation! <br />
+                  Scan your QR
+              </h2>
+              </div></span>
+          </div>
+            <img src="phone.png" alt="Phone image" class="phone"/>
+          
+        </section>
+        <section class="container col-lg-6">
+          <form class="row" action="/" method="post">
+            <legend class="titulo">Input the URL where you want your QR code be redirected</legend>
+            
+              <div class="col-lg-6 correction">
+                <input type="url" class="form-correction" id="qr_link" name="qr" placeholder="QR redirect link">
+              </div>
+              <div class="col-lg-6 correction ">
+                <button type="submit" class=" glow-on-hover" id="button">Submit </button>
+            
+
+            </div>
+          </form>
+
+
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
